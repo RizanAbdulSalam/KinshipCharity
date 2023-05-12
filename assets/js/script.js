@@ -337,17 +337,3 @@ document.addEventListener("DOMContentLoaded", function () {
     loader = document.getElementById('loader');
     loadNow(1);
 });
-window.addEventListener('load', function(){
-	var loader = document.getElementById('loader');
-	setTimeout(function(){
-		loader.style.opacity = '0';
-		setTimeout(function(){
-			loader.style.display = 'none';
-			document.getElementById('content').style.opacity = '0';
-			document.getElementById('content').style.display = 'block';
-			setTimeout(function(){
-				document.getElementById('content').style.opacity = '0.1';
-			}, 500);
-		}, 1000);
-	}, 2000);
-});
